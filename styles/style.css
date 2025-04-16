@@ -1,93 +1,13 @@
-*:not(p) {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: "Palanquin", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    background-color: #f2f2f2;
-}
-
-section:first-child .name {
-    font-size: 60px;
-    font-weight: bold;
-}
-
-section:nth-child(odd) {
-    background-color: white;
-}
-
-section:nth-child(even) a:not(:visited) {
-    color: #0061AC;
-}
-
-#post {
-    font-weight: normal;
-    font-size: 28px;
-    line-height: normal;
-    color: #5F5F5F;
-}
-
-section {
-    display: inline;
-    padding: 32px;
-    border: solid 0 black;
-    border-radius: 10px;
-    background: #d9d9d9;
-}
-
-.buttons {
-    display: flex;
-    gap: 15px;
-    padding: 0;
-}
-
-button {
-    font-weight: 500;
-
-    color: white;
-    background: #E0340D;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-}
-
-#dllCV {
-    background: none;
-    border: solid thin black;
-    color: black;
-}
-
-h2.margin {
-    margin-bottom: 16px;
-}
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project {
-        width: 50%;
-    }
-}
-
-
-footer {
-    width: 100%;
-    height: 88px;
-    margin: 0;
-    text-align: center;
-    align-content: center;
-    color: white;
-    background: black;
-}
+/* @import url(article.css); */
+/* @import url(footer.css); */
+/* @import url(form.css); */
+/* @import url(list.css); */
+/* @import url(main.css); */
+@import url(nav.css);
+/* @import url(section.css); */
+/* @import url(utils.css); */
+@import url(variables.css);
+@import url(common.css);
+@import url(index.css);
+@import url(style0.css);
+@import url(switch.css);

@@ -10,9 +10,20 @@
 
 /* Hide default HTML checkbox */
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    scale: .75;
+    font-size: 0;
+}
+
+/* On Select */
+.switch input:focus-visible {
+    outline-style: dashed;
+    outline-color: black;
+    outline-width: 3px;
+    outline-offset: 16px;
 }
 
 /* The slider */
