@@ -7,21 +7,19 @@
         <link rel="icon" href="gamepad.svg" type="image/svg+xml">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/common.css">
-        <link rel="stylesheet" href="styles/switch.css">
-        <link rel="stylesheet" href="styles/palaquin.css">
+        <link rel="stylesheet" href="styles/index.css">
 
         <!-- Fonts -->
         <!-- Palanquin -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="darkmode.js" defer></script>
     </head>
     <body>
-        <div class="gotocontent" tabindex="0"><a href="#main">Go To Content</a></div>
+        <a href="#main" class="skip-link" tabindex="0">Skip to main content</a>
         <nav>
             <a href="/" class="name">Omar YASSINE</a>
             <!-- Rounded switch -->
@@ -40,17 +38,17 @@
                     seeking a 6-week internship starting June 9th or a 1-year
                     work-study starting September/October.</p>
                 <div class="buttons">
-                    <a href="contact.html">
-                        <button type="button">Contact Me</button>
+                    <a tabindex="-1" href="contact.html">
+                        <button>Contact Me</button>
                     </a>
-                    <a href="cv_omar_yassine.pdf">
-                        <button type="button" id="dllCV">Download CV</button>
+                    <a tabindex="-1" href="cv_omar_yassine.pdf">
+                        <button id="dllCV">Download CV</button>
                     </a>
-                    <a href="https://github.com/yomarhub">
-                        <button type="button">GitHub</button>
+                    <a tabindex="-1" href="https://github.com/yomarhub">
+                        <button>GitHub</button>
                     </a>
-                    <a href="https://www.linkedin.com/in/omar-yassine/">
-                        <button type="button">LinkedIn</button>
+                    <a tabindex="-1" href="https://www.linkedin.com/in/omar-yassine/">
+                        <button>LinkedIn</button>
                     </a>
                 </div>
             </section>

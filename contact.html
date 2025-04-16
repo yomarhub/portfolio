@@ -8,9 +8,9 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="styles/contact.css">
-        <link rel="stylesheet" href="styles/common.css">
-        <link rel="stylesheet" href="styles/switch.css">
-        <link rel="stylesheet" href="styles/palaquin.css">
+        <!-- <link rel="stylesheet" href="styles/common.css"> -->
+        <!-- <link rel="stylesheet" href="styles/switch.css"> -->
+        <!-- <link rel="stylesheet" href="styles/palaquin.css"> -->
 
         <!-- Fonts -->
         <!-- Palanquin -->
@@ -21,7 +21,7 @@
             rel="stylesheet">
     </head>
     <body>
-        <div class="gotocontent"></div>
+        <a href="#main" class="skip-link" tabindex="0">Skip to main content</a>
         <nav>
             <a href="/" class="name">Omar YASSINE</a>
             <!-- Rounded switch -->
@@ -31,36 +31,27 @@
                 <span class="slider round"></span>
             </label>
         </nav>
-        <h1>Contact Me</h1>
-        <form action="/">
-            <label>
-                Name:
-                <input type="text">
-            </label>
-            <label>
-                Email:
-                <input type="email">
-            </label>
-            <label>
-                Message:
-                <input type>
-            </label>
-            <label>
-                Date of birth:
-                <input type="text">
-            </label>
-            <label>
-                Type of inquiery:
+        <main>
+            <h1>Contact Me</h1>
+            <form action="/">
+                <label for="name">Name:</label>
+                <input id="name" type="text">
+                <label for="email">Email:</label>
+                <input id=email type="email">
+                <label for="message">Message:</label>
+                <input id=message type="text">
+                <label for="dateofbirth">Date of birth:</label>
+                <input id=dateofbirth type="text">
+                <label for="inquiery">Type of inquiery:</label>
                 <select id="inquiery">
                     <option value="0">First Option</option>
                     <option value="1">Second Option</option>
                     <option value="2">Third Option</option>
                 </select>
-            </label>
-            <label>
-                Subscribe to newsletter:
-                <input type="text">
-            </label>
-        </form>
+                <label for="newsletter">Subscribe to newsletter:</label>
+                <input id=newsletter type="text">
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
     </body>
 </html>
