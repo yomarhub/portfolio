@@ -1,13 +1,5 @@
-/* @import url(article.css); */
-/* @import url(footer.css); */
-/* @import url(form.css); */
-/* @import url(list.css); */
-/* @import url(main.css); */
-@import url(nav.css);
-/* @import url(section.css); */
-/* @import url(utils.css); */
-@import url(variables.css);
-@import url(common.css);
-@import url(index.css);
-@import url(style0.css);
+@import url(main.css);
 @import url(switch.css);
+@import url(nav.css);
+@import url(common.css);
+@import url(variables.css);

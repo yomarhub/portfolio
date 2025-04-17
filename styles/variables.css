@@ -1,10 +1,13 @@
 :root {
-    --main-color: #7070B4;
+    --main-color: #f2f2f2;
     --main-color-inverse: #fff;
     --main-color-light: color-mix(in srgb, var(--main-color) 10%, white 90%);
 
     --dark: #323230;
-    --grey: #eeeeee;
+    --grey: #5F5F5F;
+
+    --primary-color: #E0340D;
+    --secondary-color: #0061AC;
 
     --spacing: .5rem;
     --spacing-2: calc(2 * var(--spacing));
@@ -18,12 +21,12 @@
 }
 
 .darkmode {
-    --main-color: #7070B4;
-    --main-color-inverse: #fff;
-    --main-color-light: color-mix(in srgb, var(--main-color) 10%, white 90%);
+    --main-color: #6fb36f;
+    --main-color-inverse: #000;
+    --main-color-light: color-mix(in srgb, var(--main-color) 10%, black 90%);
 
-    --dark: #323230;
-    --grey: #eeeeee;
+    --dark: #312f31;
+    --grey: #111;
 
     --spacing: .5rem;
     --spacing-2: calc(2 * var(--spacing));

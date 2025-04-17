@@ -6,7 +6,6 @@
     margin: 0;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -14,7 +13,6 @@ body {
     /* background: #f2f2f2; */
     height: 100vh;
 }
-
 
 main {
     display: flex;
