@@ -1,9 +1,11 @@
 nav {
     display: flex;
+    align-self: stretch;
     align-items: center;
     justify-content: space-between;
     height: 72px;
-    margin: 0 32px;
+    padding: 0 32px;
+    background-color: var(--main-color-inverse);
 }
 
 nav>.name {
@@ -13,8 +15,6 @@ nav>.name {
     line-height: 1;
 
     font-size: 24px;
-    color: black;
+    color: var(--text);
     text-decoration: none;
-    /* padding-left: 28px;
-    border: solid black; */
 }

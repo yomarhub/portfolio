@@ -2,11 +2,14 @@
     --main-color: #f2f2f2;
     --main-color-inverse: #fff;
     --main-color-light: color-mix(in srgb, var(--main-color) 10%, white 90%);
+    --text: black;
 
     --dark: #323230;
     --grey: #5F5F5F;
+    --light-grey: #d9d9d9;
 
     --primary-color: #E0340D;
+    --primary-color-light: #ffe4db;
     --secondary-color: #0061AC;
 
     --spacing: .5rem;
@@ -21,20 +24,18 @@
 }
 
 .darkmode {
-    --main-color: #6fb36f;
-    --main-color-inverse: #000;
-    --main-color-light: color-mix(in srgb, var(--main-color) 10%, black 90%);
+    --main-color: #141414;
+    --main-color-inverse: #1a1a1a;
+    /* --main-color-light: color-mix(in srgb, var(--main-color) 10%, white 90%); */
+    --text: white;
 
-    --dark: #312f31;
-    --grey: #111;
+    /* --dark: #323230; */
+    --grey: #9F9F9F;
+    --light-grey: #333;
 
-    --spacing: .5rem;
-    --spacing-2: calc(2 * var(--spacing));
-    --spacing-3: calc(3 * var(--spacing));
-    --spacing-4: calc(4 * var(--spacing));
+    --primary-color-light: #2e2e2e;
+    --secondary-color: #55B7FF;
 
-    --border-radius: 1rem;
-    --border-radius-sm: calc(var(--border-radius) / 3);
-
-    --outline-color: var(--dark);
+    --red: #ff1c1c;
+    --outline-color: var(--text);
 }

@@ -7,10 +7,7 @@
         <link rel="icon" href="gamepad.svg" type="image/svg+xml">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="styles/contact.css">
-        <!-- <link rel="stylesheet" href="styles/common.css"> -->
-        <!-- <link rel="stylesheet" href="styles/switch.css"> -->
-        <!-- <link rel="stylesheet" href="styles/palaquin.css"> -->
+        <link rel="stylesheet" href="styles/style-contact.css">
 
         <!-- Fonts -->
         <!-- Palanquin -->
@@ -19,37 +16,54 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
             rel="stylesheet">
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="darkmode.js" defer></script>
+        <script type="text/javascript" src="contact.js" defer></script>
     </head>
     <body>
         <a href="#main" class="skip-link" tabindex="0">Skip to main content</a>
-        <nav>
-            <a href="/" class="name">Omar YASSINE</a>
-            <!-- Rounded switch -->
-            <label class="switch">
-                Toggle Dark Mode
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </nav>
-        <main>
+        <header>
+            <nav aria-label="Main navigation">
+                <a href="/" class="name">Omar YASSINE</a>
+                <label class="switch prevent-select">
+                    Toggle Dark Mode
+                    <input type="checkbox" aria-label="Toggle dark mode">
+                    <span class="slider round" aria-hidden="true"></span>
+                </label>
+            </nav>
+        </header>
+        <main id="main">
             <h1>Contact Me</h1>
-            <form action="/">
+            <form action="/" aria-label="Contact form">
                 <label for="name">Name:</label>
-                <input id="name" type="text">
+                <input id="name" name="name" type="text" required aria-required="true" aria-describedby="name-error">
+                <div id="name-error" class="error-message" aria-live="polite"></div>
+
                 <label for="email">Email:</label>
-                <input id=email type="email">
+                <input id="email" name="email" type="email" required aria-required="true" aria-describedby="email-error">
+                <div id="email-error" class="error-message" aria-live="polite"></div>
+
                 <label for="message">Message:</label>
-                <input id=message type="text">
+                <textarea id="message" name="message" rows="5" required aria-required="true" aria-describedby="message-error"></textarea>
+                <div id="message-error" class="error-message" aria-live="polite"></div>
+
                 <label for="dateofbirth">Date of birth:</label>
-                <input id=dateofbirth type="text">
-                <label for="inquiery">Type of inquiery:</label>
-                <select id="inquiery">
-                    <option value="0">First Option</option>
-                    <option value="1">Second Option</option>
-                    <option value="2">Third Option</option>
+                <input id="dateofbirth" name="dob" type="date">
+
+                <label for="inquiery">Type of inquiry:</label>
+                <select id="inquiery" name="inquiry" required aria-required="true" aria-describedby="inquiery-error">
+                    <option value="0">General</option>
+                    <option value="1">Work Opportunity</option>
+                    <option value="2">Collaboration</option>
                 </select>
-                <label for="newsletter">Subscribe to newsletter:</label>
-                <input id=newsletter type="text">
+                <div id="inquiery-error" class="error-message" aria-live="polite"></div>
+
+                <label>
+                    <input id="newsletter" name="newsletter" type="checkbox">
+                    Send Copy Of Message
+                </label>
+                <div id="form-message" aria-live="polite" role="status"></div>
                 <button type="submit">Send Message</button>
             </form>
         </main>

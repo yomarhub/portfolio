@@ -1,5 +1,5 @@
 let darkmode = localStorage.getItem('darkmode')
-const themeSwitch = document.querySelector('.switch')
+const themeSwitch = document.querySelector('.switch input')
 
 const enableDarkmode = () => {
     document.body.classList.add('darkmode');
@@ -8,10 +8,13 @@ const enableDarkmode = () => {
 const disableDarkmode = () => {
     const bodyClasses = document.body.classList;
     bodyClasses.length <= 1 ? document.body.removeAttribute("class") : bodyClasses.remove("darkmode");
-    localStorage.setItem('darkmode', null)
+    localStorage.removeItem('darkmode')
 }
 
+if (themeSwitch.checked != (darkmode != null)) themeSwitch.checked = darkmode != null;
+
 if (darkmode === "active") enableDarkmode();
+window.addEventListener("load", () => document.body.classList.add("enable-transitions"));
 
 themeSwitch.addEventListener("input", () => {
     darkmode = localStorage.getItem('darkmode')

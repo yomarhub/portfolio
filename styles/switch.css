@@ -21,7 +21,7 @@
 /* On Select */
 .switch input:focus-visible {
     outline-style: dashed;
-    outline-color: black;
+    outline-color: var(--outline-color);
     outline-width: 3px;
     outline-offset: 16px;
 }
